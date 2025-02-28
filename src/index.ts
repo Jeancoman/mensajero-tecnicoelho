@@ -11,8 +11,11 @@ import { Server } from "socket.io";
 import QR from "./classes/qr";
 import crypto from "crypto";
 
+
+// Necesaria para el hashing, debe ser la misma qye esta en el frontend
 const HMAC_KEY =
-  "64544abe95ab9afb8929c22112cea5bd9914c1cf102b92945490a350b3befff4";
+  "";
+
 const PORT = 3003;
 const app = express();
 app.use(express.json());
